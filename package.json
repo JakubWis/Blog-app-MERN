@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "postinstall": "run-p install:*",
     "install:client": "cd client && npm install",
     "install:server": "cd server && npm install",
+    "postinstall": "run-p install:*",
     "start": "npm-run-all -p -l start:*",
     "start:server": "cd server && yarn start",
     "start:client": "cd client && yarn start"
